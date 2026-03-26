@@ -39,3 +39,4 @@ TODO:
   * Add pre-emphasis
   * Sanity check audio frequencies
   * Sanity check other frequency dependencies (e.g., multiples of fundamental)
+  * Change horiz axis of time domain plot to be time, not samples.
