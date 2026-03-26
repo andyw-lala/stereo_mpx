@@ -16,9 +16,13 @@ This code supports creating baseband signals consisting of:
 * Specify the amplitude of the 19KHz pilot tone (including supressing it completely)
 * Specify the amplitude of the 38KHz subcarrier (including supressing it, and thus the DSBSC signal completely)
 
-The resulting baseband signal has a spectrum of the following form ![Baseband Waveform](images/stereo_mpx-2.png).
+The resulting baseband signal has a spectrum of the following form:
 
-In addition, the code supports plotting an oscilloscope-like version of the signal (requires matplotlib to be installed) ![Time Domain Plot](images/plot.png).
+![Baseband Waveform](images/stereo_mpx-2.png).
+
+In addition, the code supports plotting an oscilloscope-like version of the signal (requires matplotlib to be installed):
+
+![Time Domain Plot](images/plot.png)
 
 The code generates ascii files in one of the formats supported by the Siglent SDG10xx series (and likely other Siglent SDG family members.) These files can be transferred to the SDG using a USB stick, or via the Siglent EasyWaveX application.
 
@@ -26,11 +30,12 @@ This project was inspired by https://github.com/AI5GW/SIGLENT, which sadly I cou
 
 TODO:
 * Enhance docs:
- * Add example command line usage
- * Add info around modulating either IF or broadcast band test signals
- * Add explanation of fundamental freq, as used in the code
+  * Add example command line usage
+  * Add info around modulating either IF or broadcast band test signals
+  * Add explanation of fundamental freq, as used in the code
+  * Add annotation for the spectrum plot, identifying key components
 * Code:
- * Add PyVISA support to directly load files into SDG
- * Add pre-emphasis
- * Sanity check audio frequencies
- * Sanity check other frequency dependencies (e.g., multiples of fundamental)
+  * Add PyVISA support to directly load files into SDG
+  * Add pre-emphasis
+  * Sanity check audio frequencies
+  * Sanity check other frequency dependencies (e.g., multiples of fundamental)
