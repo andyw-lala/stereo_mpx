@@ -18,7 +18,7 @@ This code supports creating baseband signals consisting of:
 
 The resulting baseband signal has a spectrum of the following form:
 
-![Baseband Waveform](images/stereo_mpx-2.png).
+![Baseband Waveform](images/stereo_mpx-2.png)
 
 In addition, the code supports plotting an oscilloscope-like version of the signal (requires matplotlib to be installed):
 
